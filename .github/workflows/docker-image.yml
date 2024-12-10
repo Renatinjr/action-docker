@@ -29,7 +29,7 @@ jobs:
     # Push the Docker image
     - name: Push Docker Image
       run: |
-        docker stuped-image:latest renatojrksx/stuped-image:latest
+        docker tag stuped-image:latest renatojrksx/stuped-image:latest
         docker push renatojrksx/stuped-image:latest
 
     # Deploy to multiple servers
